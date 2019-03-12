@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+# import logging
 
 dss='hello pyqt5'
 print('dss',dss)
@@ -19,5 +20,5 @@ dn=len(dss);print('dn,',dn)
 print('\n#3')
 print('s2+s3,',s2+s3)
 print('s3*2,',s3*2)
-
+# logging.info("aaa")
 

@@ -2,11 +2,12 @@
 
 # Form implementation generated from reading ui file 'MainWinSignalSlog03.ui'
 #
-# Created by: PyQt5 UI code generator 5.6
+# Created by: PyQt5 UI code generator 5.12
 #
 # WARNING! All changes made in this file will be lost!
 
 from PyQt5 import QtCore, QtGui, QtWidgets
+
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -32,8 +33,6 @@ class Ui_MainWindow(object):
         self.statusbar.setObjectName("statusbar")
         MainWindow.setStatusBar(self.statusbar)
 
-
-
         self.retranslateUi(MainWindow)
         self.checkBox.clicked['bool'].connect(self.label.setVisible)
         self.checkBox.clicked['bool'].connect(self.lineEdit.setEnabled)
@@ -45,4 +44,5 @@ class Ui_MainWindow(object):
         self.label.setText(_translate("MainWindow", "显示1"))
         self.lineEdit.setText(_translate("MainWindow", "显示2"))
         self.checkBox.setText(_translate("MainWindow", "选择"))
+
 

@@ -2,11 +2,12 @@
 
 # Form implementation generated from reading ui file 'layoutWin.ui'
 #
-# Created by: PyQt5 UI code generator 5.8.1
+# Created by: PyQt5 UI code generator 5.12
 #
 # WARNING! All changes made in this file will be lost!
 
 from PyQt5 import QtCore, QtGui, QtWidgets
+
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -153,4 +154,5 @@ class Ui_MainWindow(object):
         self.pushButton_10.setText(_translate("MainWindow", "4"))
         self.pushButton_18.setText(_translate("MainWindow", "/"))
         self.pushButton_17.setText(_translate("MainWindow", "计算"))
+
 

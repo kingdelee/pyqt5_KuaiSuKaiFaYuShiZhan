@@ -2,11 +2,12 @@
 
 # Form implementation generated from reading ui file 'MainWinSignalSlog02.ui'
 #
-# Created by: PyQt5 UI code generator 5.8.1
+# Created by: PyQt5 UI code generator 5.12
 #
 # WARNING! All changes made in this file will be lost!
 
 from PyQt5 import QtCore, QtGui, QtWidgets
+
 
 class Ui_Form(object):
     def setupUi(self, Form):
@@ -75,4 +76,5 @@ class Ui_Form(object):
         self.previewButton.setText(_translate("Form", "预览"))
         self.resultGroup.setTitle(_translate("Form", "操作结果"))
         self.resultLabel.setText(_translate("Form", "<html><head/><body><p><br/></p></body></html>"))
+
 

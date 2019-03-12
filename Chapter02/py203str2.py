@@ -6,6 +6,7 @@ print('\n#1,去空格及特殊符号')
 s1=dss.strip().lstrip().rstrip(',')
 print('s1,',s1)
 
+
 #2
 print('\n#2,字符串连接')
 s2=dss.join(['a','.','c'])
@@ -13,6 +14,16 @@ print('s2,',s2)
 s3='s3'
 s3+='xx'
 print('s3,',s3)
+
+#2
+print('\n#2,字符串连接')
+s2=dss.join(['a','.','c'])
+print('s2,',s2)
+s3='s3'
+s3+='xx'
+print('s3,',s3)
+
+
 
 #3
 print('\n#3,查找字符')

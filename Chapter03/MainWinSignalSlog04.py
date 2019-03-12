@@ -1,48 +1,48 @@
 # -*- coding: utf-8 -*-
 
-"""
-Module implementing MainWindow.
-"""
+# Form implementation generated from reading ui file 'MainWinSignalSlog04.ui'
+#
+# Created by: PyQt5 UI code generator 5.12
+#
+# WARNING! All changes made in this file will be lost!
 
-from PyQt5.QtCore import pyqtSlot
-from PyQt5.QtWidgets import QMainWindow,QApplication
-
-from Ui_MainWinSignalSlog04 import Ui_MainWindow
-
-#注：原代码为 from .Ui_MainWinSignalSlog04 import Ui_MainWindow，运行出错，需要去掉.
-
-class MainWindow(QMainWindow, Ui_MainWindow):
-    """
-    Class documentation goes here.
-    """
-    def __init__(self, parent=None):
-        """
-        Constructor
-        
-        @param parent reference to the parent widget
-        @type QWidget
-        """
-        super(MainWindow, self).__init__(parent)
-        self.setupUi(self)
-        self.checkBox.setChecked(True) # 设置checkBox默认的初始状态为选择
-
-    
-    @pyqtSlot(bool)
-    def on_checkBox_clicked(self, checked):
-        """
-        Slot documentation goes here.
-        
-        @param checked DESCRIPTION
-        @type bool
-        """
-        self.label.setVisible(checked)
-        self.lineEdit.setEnabled(checked)
+from PyQt5 import QtCore, QtGui, QtWidgets
 
 
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(573, 427)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.label = QtWidgets.QLabel(self.centralwidget)
+        self.label.setGeometry(QtCore.QRect(140, 240, 54, 21))
+        self.label.setObjectName("label")
+        self.lineEdit = QtWidgets.QLineEdit(self.centralwidget)
+        self.lineEdit.setGeometry(QtCore.QRect(260, 240, 71, 20))
+        self.lineEdit.setObjectName("lineEdit")
+        self.checkBox = QtWidgets.QCheckBox(self.centralwidget)
+        self.checkBox.setGeometry(QtCore.QRect(170, 190, 71, 16))
+        self.checkBox.setObjectName("checkBox")
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(MainWindow)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 573, 23))
+        self.menubar.setObjectName("menubar")
+        MainWindow.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
 
-if __name__ == "__main__":
-    import sys
-    app = QApplication(sys.argv)
-    myWin = MainWindow()
-    myWin.show()
-    sys.exit(app.exec_())
+        self.retranslateUi(MainWindow)
+        self.checkBox.clicked['bool'].connect(self.label.setVisible)
+        self.checkBox.clicked['bool'].connect(self.lineEdit.setEnabled)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.label.setText(_translate("MainWindow", "显示1"))
+        self.lineEdit.setText(_translate("MainWindow", "显示2"))
+        self.checkBox.setText(_translate("MainWindow", "选择"))
+
+
